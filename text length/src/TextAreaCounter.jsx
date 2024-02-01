@@ -5,6 +5,7 @@ class TextAreaCounter extends Component {
     super();
     this.state = {
       textValue: "",
+      textArea: "",
     };
   }
 
@@ -19,6 +20,7 @@ class TextAreaCounter extends Component {
         <textarea
           placeholder={place ? place : this.props.text}
           onChange={this.handleChange}
+          disabled={this.state.textArea}
         ></textarea>
         <p>number of characters typed are {this.state.textValue}</p>
       </>
@@ -26,7 +28,11 @@ class TextAreaCounter extends Component {
   }
 
   handleChange = (event) => {
-    this.setState({ textValue: event.target.value.length });
+    const maxLength = 10;
+    const currentLength = event.target.value.length;
+    currentLength <= maxLength
+      ? this.setState({ textValue: currentLength })
+      : this.setState({ textArea: "disabled" });
   };
 }
 
