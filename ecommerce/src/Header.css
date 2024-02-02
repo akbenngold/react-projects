@@ -1,0 +1,33 @@
+.header {
+  border: 1px solid black;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.logo {
+  height: 20px;
+  width: 124px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  color: white;
+  background: black;
+  position: absolute;
+  top: 32px;
+  right: -10px;
+}
