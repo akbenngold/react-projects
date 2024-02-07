@@ -43,11 +43,13 @@ class Photography extends Component {
               const price = person.price;
               return (
                 <>
-                  <img src={image} alt="" className="compn" />
-                  <button>ADD TO CART</button>
-                  <p>{category}</p>
-                  <h2>{title}</h2>
-                  <p>${price}</p>
+                  <div key={title}>
+                    <img src={image} alt="" className="compn" />
+                    <button>ADD TO CART</button>
+                    <p>{category}</p>
+                    <h2>{title}</h2>
+                    <p>${price}</p>
+                  </div>
                 </>
               );
             })}

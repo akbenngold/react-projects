@@ -29,7 +29,7 @@ class Info extends Component {
           <div className="subheading">People also buy</div>
           <div className="flex">
             {this.props.others.map((item) => {
-              return <img src={item} className="buy" />;
+              return <img src={item} key={item} className="buy" />;
             })}
           </div>
         </div>
