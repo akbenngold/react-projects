@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
 :root {
   --white: #ffffff;
+  --whitebg: #ffffffc5;
+
   --light-blue: #6366f1;
   --sky-blue: #ebeefe;
   --dark-blue: #1c2536;
   --grey: #9da4ae;
+  --greybg: #9da4ae2f;
   --dark-two: #4d5761;
   --grey-one: #6c737f;
   --red: #f04438;

@@ -1,0 +1,32 @@
+.sidebar {
+  background: var(--dark-blue);
+  color: var(--white);
+  width: 15rem;
+  color: var(--grey);
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+.sidebar__title {
+  margin-bottom: 1rem;
+}
+
+.sidebar__item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1rem;
+  height: 1.5rem;
+  width: 12rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar__item:hover {
+  scale: 1.05;
+  background: var(--greybg);
+  color: var(--whitebg);
+  border-radius: 5px;
+}

@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__image {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: 0.5s;
+}
+.header__image:hover {
+  scale: 1.2;
+}
+
+.header__notification {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__notification__image {
+  transition: 0.5s;
+}
+.header__notification__image:hover {
+  scale: 1.2;
+}
+
+.header__notification__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -0.6rem;
+  top: -0.8rem;
+  color: var(--white);
+  background: var(--red);
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.header__notification__badge:hover {
+  scale: 1.2;
+}
