@@ -15,7 +15,7 @@ class Main extends Component {
         {this.state.icons.map((iconName, index) => (
           <div className="sidebar__item" key={index}>
             <div className="sidebar__icon">
-              <img src={mainIcons[iconName]} alt="" />
+              <img src={mainIcons[iconName]} className="sidebar__icon" alt="" />
             </div>
             <div className="sidebar__item__title">{iconName}</div>
           </div>

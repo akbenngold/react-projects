@@ -30,3 +30,7 @@
   color: var(--whitebg);
   border-radius: 5px;
 }
+
+.sidebar__icon {
+  color: var(--grey);
+}
