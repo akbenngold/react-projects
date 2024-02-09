@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
 import "./App.css";
-import MainPage from "./components/main/Mainpage";
-import BlueButton from "./components/utilities/BlueButton";
+// import MainPage from "./components/main/Mainpage";
+// import BlueButton from "./components/utilities/BlueButton";
 class App extends Component {
   constructor() {
     super();
@@ -12,10 +12,10 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <Header />
+        <Header />
         <Sidebar />
-        <MainPage /> */}
-        <BlueButton name="button" />
+        {/* <MainPage />
+        <BlueButton name="button" /> */}
       </>
     );
   }
